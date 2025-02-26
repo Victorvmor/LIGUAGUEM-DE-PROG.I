@@ -1,6 +1,32 @@
 /*1- Faça um algoritmo que leia a idade de uma pessoa expressa em anos, meses e dias e escreva a idade dessa pessoa expressa apenas em dias. Considerar ano com 365 dias e mês com 30 dias. */
 
-/*import java.util.Scanner; public class idade {
+```import java.util.Scanner;
+
+public class idade{
+    
+    public static void main(String[] args){
+        //declaração de variavel
+        double precofabrica,custofim,distribuidora,imposto;
+        Scanner sc = new Scanner(System.in);
+     
+     imposto=45.0;
+     distribuidora=28.0;
+     
+     
+      System.out.print("Qual o preço do carro? ");
+     precofabrica =  sc.nextDouble();
+     
+     imposto=(precofabrica*imposto/100);
+    distribuidora= (precofabrica*distribuidora/100);
+    custofim=(precofabrica+imposto+distribuidora);
+    
+     
+      System.out.print("Custo Final: "+custofim );
+    
+     
+    }
+}
+import java.util.Scanner; public class idade {
 
  public static void main(String []args){
      //declaração de variável
@@ -25,14 +51,14 @@
    
    
    
- }*/
+ }```
  
  
  
  
  /* 2-
  Escreva um algoritmo para ler o número total de eleitores de um município, o número de votos brancos, nulos e válidos. Calcular e escrever o percentual que cada um representa em relação ao total de eleitores.   */
-/*import java.util.Scanner;
+```import java.util.Scanner;
 
 public class idade {
 
@@ -75,11 +101,12 @@ public static void main(String[] args) {
     System.out.println("A porcentagem de votos brancos é: " + porcentagembrancos  + "%");
 porcentagemvalidos= ((double) validos / eleitores) * 100;
 
-System.out.println("A porcentagem de votos nulos é: " + porcentagemvalidos + "%"); // Fechar o scanner sc.close(); } }*/
+System.out.println("A porcentagem de votos nulos é: " + porcentagemvalidos + "%"); // Fechar o scanner sc.close(); } }```
 
-/*3- Escreva um algoritmo para ler o salário mensal atual de um funcionário e o percentual de reajuste. Calcular e escrever o valor do novo salário. 8?*/
 
-/*import java.util.Scanner;
+3- Escreva um algoritmo para ler o salário mensal atual de um funcionário e o percentual de reajuste. Calcular e escrever o valor do novo salário. 8?*/
+```
+import java.util.Scanner;
 
 public class idade{
     
@@ -98,19 +125,40 @@ public class idade{
     
      
     }
-} */
+} 
+```
 
 
 
-
-/*4- O custo de um carro novo ao consumidor é a soma do custo de fábrica com a porcentagem do distribuidor e dos impostos (aplicados ao custo de fábrica). Supondo que o percentual do distribuidor seja de 28% e os impostos de 45%, escrever um algoritmo para ler o custo de fábrica de um carro, calcular e escrever o custo final ao consumidor.*/
-
+4- O custo de um carro novo ao consumidor é a soma do custo de fábrica com a porcentagem do distribuidor e dos impostos (aplicados ao custo de fábrica). Supondo que o percentual do distribuidor seja de 28% e os impostos de 45%, escrever um algoritmo para ler o custo de fábrica de um carro, calcular e escrever o custo final ao consumidor.*/
 
 
-import java.ultil.Scanner;
-    public class idade{
-        public static void main (String[] args){
-            
-        }
+```
+import java.util.Scanner;
+
+public class idade{
+    
+    public static void main(String[] args){
+        //declaração de variavel
+        double precofabrica,custofim,distribuidora,imposto;
+        Scanner sc = new Scanner(System.in);
+     
+     imposto=45.0;
+     distribuidora=28.0;
+     
+     
+      System.out.print("Qual o preço do carro? ");
+     precofabrica =  sc.nextDouble();
+     
+     imposto=(precofabrica*imposto/100);
+    distribuidora= (precofabrica*distribuidora/100);
+    custofim=(precofabrica+imposto+distribuidora);
+    
+     
+      System.out.print("Custo Final: "+custofim );
+    
+     
     }
+}
+```
 
