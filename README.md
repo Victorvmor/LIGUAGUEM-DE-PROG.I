@@ -144,7 +144,7 @@ public class idade{
 
 
 5- Escreva um algoritimo para ler uma temperatura em graus Fahrenheit, calcular e escrever o valor correspondente em graus Celsius. Observação: PARA TESTAR SE SUA RESPOSTA ESTA CORRETA SAIBA QUE 100°C = 212F
-import java.util.Scanner;
+
 
 
 ```java
@@ -166,4 +166,38 @@ public class idade{
      
     }
 }
+```
 
+
+7- Ler um valor e escrever a mensagem É MAIOR QUE 10, se o valor lido for maior que 10, caso contrário escrever NÃO É MAIOR QUE 10.
+
+```java
+import java.util.Scanner;
+
+public class idade{
+    
+    public static void main(String[] args){
+        //declaração de variavel
+        double valor1,valorfix;
+        Scanner sc = new Scanner(System.in);
+     
+    valorfix= 10;
+     
+      System.out.print("Primeiro valor: ");
+     valor1 =  sc.nextDouble();
+    
+     
+     if(valorfix>valor1){  System.out.print("É MENOR QUE "+ valorfix);
+         
+     }else if (valorfix>valor1) {
+            System.out.println("VALORES IGUAIS");}
+            
+            
+    else{  System.out.println("É MAIOR QUE "+ valorfix);
+        
+        
+    }
+     
+    }
+}
+```
