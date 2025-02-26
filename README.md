@@ -1,5 +1,5 @@
 /*1- Faça um algoritmo que leia a idade de uma pessoa expressa em anos, meses e dias e escreva a idade dessa pessoa expressa apenas em dias. Considerar ano com 365 dias e mês com 30 dias. */
-```
+```java
 import java.util.Scanner; public class idade {
 
  public static void main(String []args){
@@ -25,14 +25,16 @@ import java.util.Scanner; public class idade {
    
    
    
- }```
+ }
+```
  
  
  
  
 /*2-Escreva um algoritmo para ler o número total de eleitores de um município, o número de votos brancos, nulos e válidos. Calcular e escrever o percentual que cada um representa em relação ao total de eleitores.  */
 
-```import java.util.Scanner;
+```java
+import java.util.Scanner;
 
 public class idade {
 
@@ -75,12 +77,13 @@ public static void main(String[] args) {
     System.out.println("A porcentagem de votos brancos é: " + porcentagembrancos  + "%");
 porcentagemvalidos= ((double) validos / eleitores) * 100;
 
-System.out.println("A porcentagem de votos nulos é: " + porcentagemvalidos + "%"); // Fechar o scanner sc.close(); } }```
+System.out.println("A porcentagem de votos nulos é: " + porcentagemvalidos + "%"); // Fechar o scanner sc.close(); } }
+```
 
 
 3- Escreva um algoritmo para ler o salário mensal atual de um funcionário e o percentual de reajuste. Calcular e escrever o valor do novo salário. 8?*/
 
-```
+```java
 import java.util.Scanner;
 
 public class idade{
@@ -101,6 +104,7 @@ public class idade{
      
     }
 } 
+
 ```
 
 
@@ -108,7 +112,7 @@ public class idade{
 4- O custo de um carro novo ao consumidor é a soma do custo de fábrica com a porcentagem do distribuidor e dos impostos (aplicados ao custo de fábrica). Supondo que o percentual do distribuidor seja de 28% e os impostos de 45%, escrever um algoritmo para ler o custo de fábrica de um carro, calcular e escrever o custo final ao consumidor.*/
 
 
-```
+```java
 import java.util.Scanner;
 
 public class idade{
@@ -135,5 +139,31 @@ public class idade{
      
     }
 }
+
 ```
+
+
+5- Escreva um algoritimo para ler uma temperatura em graus Fahrenheit, calcular e escrever o valor correspondente em graus Celsius. Observação: PARA TESTAR SE SUA RESPOSTA ESTA CORRETA SAIBA QUE 100°C = 212F
+import java.util.Scanner;
+
+
+```java
+import java.util.Scanner;
+public class idade{
+    
+    public static void main(String[] args){
+        //declaração de variavel
+        double grausf,grausc,conversao;
+        Scanner sc = new Scanner(System.in);
+     
+    
+     
+      System.out.print("Digite a temperatura em FH: ");
+     grausf =  sc.nextDouble();
+    conversao= ((grausf-32)*5/9);
+    System.out.print("Temperatura em celsius: "+ conversao);
+      
+     
+    }
+}
 
