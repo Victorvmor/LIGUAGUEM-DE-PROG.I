@@ -201,3 +201,36 @@ public class idade{
     }
 }
 ```
+
+
+8- ler um valor e escrever se é positivoou negativo(considere o valor zero como positivo)
+
+
+```java
+
+import java.util.Scanner;
+
+public class idade{
+    
+    public static void main(String[] args){
+        //declaração de variavel
+        double valor,valorfix;
+        Scanner sc = new Scanner(System.in);
+     
+    valorfix= 0;
+     
+      System.out.print("Primeiro valor: ");
+     valor =  sc.nextDouble();
+    
+     
+     if(valor>valorfix){  System.out.print("É POSITIVO ");
+         
+     }else if (valor<valorfix) {
+            System.out.println("VALOR É NEGATIVO");}
+            
+            
+   
+     
+    }
+}
+```
