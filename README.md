@@ -303,3 +303,34 @@ if (mediari>=notafix){
 }
 }
 ```
+11-
+
+```java
+
+import java.util.Scanner;
+
+public class idade{
+    
+    public static void main(String[] args){
+        //declaração de variavel
+        int anoatu,nasc,deferenca;
+        Scanner sc = new Scanner(System.in);
+    
+     
+      System.out.print("Ano atual?: ");
+        anoatu = sc.nextInt();
+      
+   
+      System.out.print("Seu Nascimento?: ");
+        nasc = sc.nextInt();   
+     deferenca=  (anoatu-nasc);
+     
+if (deferenca>=18){
+      System.out.print("Pode votar");
+} else{System.out.print("Não pode");
+     
+}
+
+}
+}
+```
