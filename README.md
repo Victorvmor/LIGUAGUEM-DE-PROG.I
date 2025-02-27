@@ -334,3 +334,35 @@ if (deferenca>=18){
 }
 }
 ```
+
+12-
+
+
+
+```java
+import java.util.Scanner;
+
+public class idade{
+    
+    public static void main(String[] args){
+        //declaração de variavel
+        int num1,num2;
+        Scanner sc = new Scanner(System.in);
+    
+     
+      System.out.print("Primeiro numero?: ");
+        num1 = sc.nextInt();
+      
+   
+      System.out.print("Segundo numero: ");
+        num2 = sc.nextInt();   
+    
+if (num1>=num2){
+      System.out.print("Maior "+num1);
+} else if{System.out.print("Maior "+num2);
+     
+}
+
+}
+}
+```
