@@ -234,3 +234,39 @@ public class idade{
     }
 }
 ```
+
+
+9-
+
+
+
+
+
+
+```java
+
+import java.util.Scanner;
+
+public class idade{
+    
+    public static void main(String[] args){
+        //declaração de variavel
+        int qtdeatac,qtde;
+        double varejo,atacado;
+        Scanner sc = new Scanner(System.in);
+     
+     varejo = 1.30;
+     atacado = 1.00;
+
+    qtdeatac= 12;
+      System.out.print("Quantas maçãs deseja comprar?: ");
+        qtde = sc.nextInt();
+if (qtde>=qtdeatac){
+      System.out.print("Quantidade :  "+qtde+ "\n Preço: "+(qtde*atacado));
+} else{
+     System.out.print("Quantidade :  "+qtde+ "\n Preço: "+(qtde*varejo));
+}
+
+}
+}
+```
