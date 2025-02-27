@@ -366,3 +366,34 @@ if (num1>=num2){
 }
 }
 ```
+
+12-
+
+```java
+
+import java.util.Scanner;
+
+public class Idade {
+    
+    public static void main(String[] args){
+        // declaração de variáveis
+        int num1, num2;
+        Scanner sc = new Scanner(System.in);
+
+        // Solicitar e ler os números
+        System.out.print("Primeiro número?: ");
+        num1 = sc.nextInt();
+      
+        System.out.print("Segundo número: ");
+        num2 = sc.nextInt();   
+
+        // Verificação de qual número é maior
+        if (num1 >= num2) {
+            System.out.print(num1 + ", " + num2);  // Corrigido para concatenar os números
+        } else if (num2 > num1) {
+            System.out.print(num2 + ", " + num1);  // Corrigido para concatenar os números
+        }
+    }
+}
+
+```
