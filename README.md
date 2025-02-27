@@ -270,3 +270,36 @@ if (qtde>=qtdeatac){
 }
 }
 ```
+10-
+
+
+```java
+
+import java.util.Scanner;
+
+public class idade{
+    
+    public static void main(String[] args){
+        //declaração de variavel
+        double nota1,nota2,notafix,mediari;
+        Scanner sc = new Scanner(System.in);
+    
+     
+      System.out.print("Primeira nota?: ");
+        nota1 = sc.nextInt();
+      
+   
+      System.out.print("Segunda nota?: ");
+        nota2 = sc.nextInt();   
+        
+     mediari=(nota1+nota2)/2;
+     notafix=6.0;     
+if (mediari>=notafix){
+      System.out.print("passou");
+} else{System.out.print("ficou");
+     
+}
+
+}
+}
+```
