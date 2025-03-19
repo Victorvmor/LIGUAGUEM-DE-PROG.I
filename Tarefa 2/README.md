@@ -9,4 +9,3 @@ Você pode acessar as imagens coletadas para a tarefa na pasta de imagens abaixo
 
 ---
 
-**Observação**: Certifique-se de que todas as imagens utilizadas são de fontes confiáveis e com direitos de uso adequados.
