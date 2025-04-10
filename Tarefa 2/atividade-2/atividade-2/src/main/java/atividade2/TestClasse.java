@@ -102,23 +102,48 @@ public class TestClasse{
 
             case 6:
                 // Planta
-                Planta pl1 = new Planta("Rosa", "Arbusto lenhoso", "vermelha");
+                // Pedir os dados da planta ao usuário
+                System.out.println("Digite o nome da planta: ");
+                String nomePlanta = entrada.nextLine();
+
+                System.out.println("Digite o tipo da planta (ex: Arbusto lenhoso): ");
+                String tipoPlanta = entrada.nextLine();
+
+                System.out.println("Digite a cor da planta: ");
+                String corPlanta = entrada.nextLine();
+
+                // Criando a planta com as informações fornecidas pelo usuário
+                Planta pl1 = new Planta(nomePlanta, tipoPlanta, corPlanta);
+
+                // Verificando o nível de água da planta
                 pl1.verificarONivelAgua(entrada);
-                if(pl1.getNivelAgua() == 0) {
-                    pl1.regar(entrada);
-                    pl1.mostrarInformacaoPlanta();
-                }else {
-                System.out.println("Planta com agua");
-                pl1.mostrarInformacaoPlanta();
+
+                // Se o nível de água for 0, regar a planta
+                if (pl1.getNivelAgua() == 0) {
+                    System.out.println(pl1.getNome() + " precisa de água!");
+                    pl1.regar(entrada);  // Regar a planta
+                } else {
+                    System.out.println(pl1.getNome() + " já tem água.");
                 }
+
+                // Exibindo informações da planta
+                pl1.mostrarInformacaoPlanta();
                 break;
 
+
             case 7:
-                Serie Seri1 = new Serie("Round Six", "Hwang Dong-hyuk", 2021);
-                Seri1.exibirSerie();
+                // Criar uma nova série
+                Serie serie1 = new Serie();
+
+                // Inserir os dados da série
+                serie1.inserirDados(entrada);
+
+                // Exibir as informações da série
+                serie1.exibirSerie();
                 System.out.println("");
-                Seri1.inserirAtor(entrada);
-                Seri1.exibirAtores(entrada);
+
+                // Exibir os atores favoritos
+                serie1.exibirAtores();
                 break;
 
             case 8:
@@ -127,18 +152,33 @@ public class TestClasse{
                 partida.mostrarPlacar();
                 break;
 
-            case 9:
-                    Caderno caderno1 = new Caderno("20 matérias", "azul", 320, "Caderno de estudo");
-                    caderno1.escreverNoCaderno(entrada);
-                    caderno1.arrancarPaginas(entrada);
-                    caderno1.trocarCorCapa(entrada);
-                break;
+            case  9:
+            // Pedir informações do livro
+            System.out.println("Digite o nome do livro: ");
+            String nomeLivro = entrada.nextLine();
+
+            System.out.println("Digite a cor da capa do livro: ");
+            String corLivro = entrada.nextLine();
+
+            System.out.println("Digite o número de páginas do livro: ");
+            int numPaginas = entrada.nextInt();
+            entrada.nextLine();  // Limpar o buffer do Scanner
+
+            System.out.println("Digite o tipo do livro: ");
+            String tipoLivro = entrada.nextLine();
+
+            // Criar o objeto Livro com os dados fornecidos pelo usuário
+            Livro livro1 = new Livro(nomeLivro, corLivro, numPaginas, tipoLivro);
+
+            // Executar a interação com o livro
+            livro1.interagirComLivro(entrada);
+            break;
+
 
             case 10:
-                Fruta fruta1 = new Fruta("Pera", "Preta", "Polo", "", "");
-                fruta1.comer(entrada);
-                fruta1.estado();
-
+                Fruta fruta1 = new Fruta("Pera", "Verde", "Fruta", "S"); // Fruta pode ser comida
+                fruta1.verificarEstado(entrada);  // Pergunta se está podre e age conforme o estado
+                fruta1.estado();  // Exibe o estado da fruta
                 break;
 
             case 0:
