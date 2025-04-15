@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="467.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.CarroController">
+   <children>
+      <Label layoutX="174.0" layoutY="39.0" text="ACELERE SEU CARRO">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nomeCarro" layoutX="220.0" layoutY="143.0" />
+      <Label layoutX="213.0" layoutY="102.0" text="NOME DO POSANTE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnligar" layoutX="250.0" layoutY="340.0" mnemonicParsing="false" onAction="#ligarCarro" prefHeight="45.0" prefWidth="89.0" text="LIGAR">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAcelerar" layoutX="56.0" layoutY="256.0" mnemonicParsing="false" onAction="#acelerarCarro" prefHeight="45.0" prefWidth="118.0" text="ACELERAR">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnFreiar" layoutX="416.0" layoutY="256.0" mnemonicParsing="false" onAction="#freiarCarro" prefHeight="45.0" prefWidth="129.0" text="FREIAR">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="262.0" layoutY="177.0" text="MARCA">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="marcaCarro" layoutX="220.0" layoutY="215.0" />
+   </children>
+</AnchorPane>

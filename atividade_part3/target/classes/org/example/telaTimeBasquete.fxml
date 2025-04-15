@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="placar" prefHeight="519.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.TelaTimeBasqueteController">
+   <children>
+      <Label layoutX="176.0" layoutY="35.0" prefHeight="48.0" prefWidth="236.0" text="PLACAR">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="timeCasa" layoutX="89.0" layoutY="139.0" />
+      <Label layoutX="118.0" layoutY="103.0" text="TIME DA CASA" />
+      <TextField fx:id="timeVisitante" layoutX="348.0" layoutY="139.0" />
+      <Label layoutX="379.0" layoutY="103.0" text="TIME VISITANTE" />
+      <Label layoutX="246.0" layoutY="273.0" text="RESULTADO">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="358.0" layoutY="200.0" text="CESTAS TIME VISITANTE" />
+      <TextField fx:id="cestasTimeCasa" layoutX="89.0" layoutY="229.0" />
+      <TextField fx:id="cestasTimeVisitante" layoutX="344.0" layoutY="229.0" />
+      <Label layoutX="106.0" layoutY="200.0" text="CESTAS TIME CASA" />
+      <Button fx:id="btnEnviar" layoutX="444.0" layoutY="310.0" mnemonicParsing="false" onAction="#enviarPlacar" text="Enviar">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="txtArea" layoutX="200.0" layoutY="310.0" prefHeight="123.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>
