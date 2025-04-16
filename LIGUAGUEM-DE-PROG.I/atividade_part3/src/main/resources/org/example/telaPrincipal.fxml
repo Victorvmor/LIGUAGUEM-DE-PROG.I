@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.example.TelaPrincipalController" style="-fx-background-color: #f4f7f6;">
+
+   <children>
+      <!-- Botão para Time de Basquete -->
+      <Button fx:id="btmTimeBasquete" layoutX="100.0" layoutY="50.0"
+              mnemonicParsing="false" text="Time de Basquete"
+              onAction="#trocarTelaTimeBasquete"
+              style="-fx-font-size: 16px; -fx-background-color: #4CAF50; -fx-text-fill: white; -fx-padding: 10px; -fx-border-radius: 5px; -fx-font-weight: bold;" />
+
+      <!-- Botão para Carro -->
+      <Button fx:id="btmCarro" layoutX="100.0" layoutY="120.0"
+              mnemonicParsing="false" text="Carro"
+              onAction="#trocarTelaCarro"
+              style="-fx-font-size: 16px; -fx-background-color: #2196F3; -fx-text-fill: white; -fx-padding: 10px; -fx-border-radius: 5px; -fx-font-weight: bold;" />
+
+      <!-- Botão para Fruta -->
+      <Button fx:id="btmFruta" layoutX="100" layoutY="190" text="Fruta"
+              onAction="#trocarTelaFruta"
+              style="-fx-font-size: 16px; -fx-background-color: #FF5722; -fx-text-fill: white; -fx-padding: 10px; -fx-border-radius: 5px; -fx-font-weight: bold;" />
+
+      <!-- Botão para Animal -->
+      <Button fx:id="btmAnimal" layoutX="100" layoutY="260" text="Animal"
+              onAction="#trocarTelaAnimal"
+              style="-fx-font-size: 16px; -fx-background-color: #9C27B0; -fx-text-fill: white; -fx-padding: 10px; -fx-border-radius: 5px; -fx-font-weight: bold;" />
+
+   </children>
+</AnchorPane>

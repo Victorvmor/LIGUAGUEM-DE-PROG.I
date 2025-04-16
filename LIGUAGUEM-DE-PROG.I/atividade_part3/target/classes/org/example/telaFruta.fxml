@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Pos?>
+
+<AnchorPane fx:id="pane" style="-fx-background-color: #f1f1f1;" xmlns:fx="http://javafx.com/fxml/1"
+            xmlns="http://javafx.com/javafx" fx:controller="org.example.controller.TelaFrutaController"
+            prefWidth="600" prefHeight="400">
+
+    <children>
+        <!-- Título -->
+        <Label layoutX="150" layoutY="50" text="Informe os dados da fruta"
+               style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-fill: #388E3C;"/>
+
+        <!-- Nome da Fruta -->
+        <Label layoutX="50" layoutY="100" text="Nome da fruta:"
+               style="-fx-font-size: 14px; -fx-text-fill: #444444; -fx-font-weight: bold;" />
+        <TextField fx:id="txtNome" layoutX="150" layoutY="95" prefWidth="250"
+                   style="-fx-padding: 10px; -fx-border-radius: 5px; -fx-background-color: #ffffff; -fx-border-color: #388E3C;"/>
+
+        <!-- Cor da Fruta -->
+        <Label layoutX="50" layoutY="140" text="Cor da fruta:"
+               style="-fx-font-size: 14px; -fx-text-fill: #444444; -fx-font-weight: bold;" />
+        <TextField fx:id="txtCor" layoutX="150" layoutY="135" prefWidth="250"
+                   style="-fx-padding: 10px; -fx-border-radius: 5px; -fx-background-color: #ffffff; -fx-border-color: #388E3C;"/>
+
+        <!-- Está Podre? -->
+        <Label layoutX="50" layoutY="180" text="Está podre? (S/N):"
+               style="-fx-font-size: 14px; -fx-text-fill: #444444; -fx-font-weight: bold;" />
+        <TextField fx:id="txtPodre" layoutX="200" layoutY="175" prefWidth="50"
+                   style="-fx-padding: 10px; -fx-border-radius: 5px; -fx-background-color: #ffffff; -fx-border-color: #388E3C;"/>
+
+        <!-- Botão de Verificar -->
+        <Button fx:id="btnVerificar" text="Verificar" layoutX="150" layoutY="220" onAction="#verificarFruta"
+                style="-fx-font-size: 14px; -fx-background-color: #388E3C; -fx-text-fill: white; -fx-padding: 10px; -fx-border-radius: 5px; -fx-cursor: hand;"/>
+
+        <!-- Área de Resultados -->
+        <TextArea fx:id="resultado" layoutX="50" layoutY="270" prefWidth="500" prefHeight="100"
+                  style="-fx-border-radius: 5px; -fx-background-color: #ffffff; -fx-padding: 10px; -fx-font-size: 14px; -fx-border-color: #388E3C;"/>
+    </children>
+</AnchorPane>

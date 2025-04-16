@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.controller.TelaCarroController" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #e3f2fd;">
+   <VBox spacing="10" alignment="CENTER" AnchorPane.topAnchor="50.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0">
+      <Label text="Tela do Carro" style="-fx-font-size: 24px; -fx-text-fill: #0d47a1;" />
+      <TextField fx:id="txtNome" promptText="Nome do carro" prefWidth="300"/>
+      <TextField fx:id="txtMarca" promptText="Marca do carro" prefWidth="300"/>
+      <HBox spacing="10" alignment="CENTER">
+         <Button text="Ligar" onAction="#ligarCarro"/>
+         <Button text="Acelerar" onAction="#acelerarCarro"/>
+         <Button text="Freiar" onAction="#freiarCarro"/>
+      </HBox>
+      <Label fx:id="lblStatus" text="Status: Aguardando ação..." style="-fx-text-fill: #0d47a1; -fx-font-weight: bold;"/>
+   </VBox>
+</AnchorPane>
